@@ -1,0 +1,686 @@
+.background {
+    background-color: #f7f7f7;
+    width: 1080px;
+    height: 1920px;
+    z-index: 0;
+}
+
+/* Web Notifications */
+
+#btnEnableNotifications {
+    display: none;
+}
+
+/* Camera */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%
+}
+
+#camera, #camera--sensor, #camera--view, #camera--output, {
+   position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#camera--view, #camera--sensor, #camera--output {
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+#camera--trigger {
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}
+
+.taken {
+    height: 100px;
+    width: 100px;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #ee7870;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom:  0; /* Position the navbar at the bottom of the page */
+  width: 1080px; /* Full width */
+  height: 150px;
+  z-index: 10;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 33px;
+  text-decoration: none;
+
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #e06f6c;
+  color: black;
+}
+
+h1 {
+    color: black;
+    font-size: 80px;
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 150px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    margin-left: 900px;
+    margin-top: 50px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 300px;
+    margin-left: 10px;
+}
+
+.shirt1, .shirt2, .shirt3, .shirt4, .shirt5, .shirt6 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shirt1 {
+    margin-top: 400px;
+    margin-left: 30px;
+}
+
+.shirt2 {
+    margin-top: 400px;
+    margin-left: 550px;
+}
+
+.shirt3 {
+    margin-top: 1000px;
+    margin-left: 30px;
+}
+
+.shirt4 {
+    margin-top: 1000px;
+    margin-left: 550px;
+}
+
+.shirt5 {
+    margin-top: 1600px;
+    margin-left: 30px;
+}
+
+.shirt6 {
+    margin-top: 1600px;
+    margin-left: 550px;
+}
+
+
+/* outfit pagina */
+
+h3, h4, .tekst, .tekst2, .tekst3, .tekst4, .tekst5, .tekst6 {
+    position: absolute;
+    top: 0;
+    font-family: Montserrat, sans-serif;
+    color: black;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 300px;
+    margin-left: 80px;
+}
+
+h4 {
+    margin-top: 340px;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.tekst {
+    margin-top: 300px;
+    font-size: 30px;
+    margin-left: 580px;
+}
+
+.tekst2 {
+    margin-top: 340px;
+    font-size: 20px;
+    margin-left: 580px;
+}
+
+.tekst3 {
+    margin-top: 1000px;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.tekst4 {
+    margin-top: 1040px;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.tekst5 {
+    margin-top: 1000px;
+    font-size: 30px;
+    margin-left: 580px;
+}
+
+.tekst6 {
+    margin-top: 1040px;
+    font-size: 20px;
+    margin-left: 580px;
+}
+
+.outfit1, .outfit2, .outfit3, .outfit4 {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.outfit1 {
+    margin-top: 370px;
+    margin-left: 80px;
+}
+
+.outfit2 {
+    margin-top: 370px;
+    margin-left: 580px;
+}
+
+.outfit3 {
+    margin-top: 1070px;
+    margin-left: 80px;
+}
+
+.outfit4 {
+    margin-top: 1070px;
+    margin-left: 580px;
+}
+
+.ster1, .ster2, .ster3, .ster4 {
+    position: absolute;
+    top: 0;
+    width: 322px;
+    height: 55px;
+}
+
+.ster1 {
+    margin-top: 780px;
+    margin-left: 120px;
+}
+
+.ster2 {
+    margin-top: 780px;
+    margin-left: 620px;
+}
+
+.ster3 {
+    margin-top: 1480px;
+    margin-left: 120px;
+}
+
+.ster4 {
+    margin-top: 1480px;
+    margin-left: 620px;
+}
+
+.comment1, .comment2, .deel1, .deel2 {
+    position: absolute;
+    top: 0;
+    color: #ee7870;
+    width: 100px;
+    height: 100px;
+}
+
+.comment1 {
+    margin-top: 850px;
+    margin-left: 150px;
+}
+
+.deel1 {
+    margin-top: 850px;
+    margin-left: 290px;
+}
+
+.comment2 {
+    margin-top: 850px;
+    margin-left: 650px;
+}
+
+.deel2 {
+    margin-top: 850px;
+    margin-left: 790px;
+}
+
+.comment3, .comment4, .deel3, .deel4 {
+   position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.comment3 {
+    margin-top: 1550px;
+    margin-left: 150px;
+}
+
+.deel3 {
+    margin-top: 1550px;
+    margin-left: 290px;
+}
+
+.comment4 {
+    margin-top: 1550px;
+    margin-left: 650px;
+}
+
+.deel4 {
+    margin-top: 1550px;
+    margin-left: 790px;
+}
+
+/* comment pagina */
+
+.main {
+    opacity: 50%; 
+}
+
+.chatbox {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 250px;
+    margin-top: 500px;
+}
+
+.tekstje1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    z-index: 4;
+    margin-left: 290px;
+    margin-top: 530px;
+}
+
+.outfitje1 {
+    position: absolute;
+    z-index: 4;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    top: 0;
+    margin-left: 290px;
+    margin-top: 570px;
+}
+
+.kruisje {
+    position: absolute;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    margin-left: 790px;
+    margin-top: 510px;
+    
+}
+
+.tw1, .tw2, .tw3 {
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    height: 50px;
+    top: 0;
+    border-radius: 5px;
+    
+}
+
+.tw1 {
+    background-color: #EE7870;
+    margin-left: 400px;
+    margin-top: 900px;
+}
+
+.tw2 {
+    background-color: #EE7870;
+    margin-left: 400px;
+    margin-top: 1050px;
+}
+
+.tw3 {
+    background-color: black;
+    margin-left: 370px;
+    margin-top: 1200px;
+}
+
+
+.user1, .user2, .user3 {
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    top: 0;
+}
+
+.user1 {
+    margin-left: 730px;
+    margin-top: 880px;
+}
+
+.user2 {
+    margin-left: 730px;
+    margin-top: 1030px;
+}
+
+.user3 {
+    margin-left: 260px;
+    margin-top: 1180px;
+}
+
+.cm1, .cm2, .cm3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 0;
+}
+
+.cm1 {
+    margin-left: 500px;
+    margin-top: 910px;
+}
+
+.cm2 {
+    margin-left: 500px;
+    margin-top: 1060px;
+}
+
+.cm3 {
+    margin-left: 450px;
+    margin-top: 1210px;
+}
+/* outfit maken */
+
+.tshirt1, .tshirt2, .tshirt3, .tshirt4 {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tshirt1 {
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+.tshirt2 {
+    margin-top: 300px;
+    margin-left: 350px;
+}
+
+.tshirt3 {
+    margin-top: 600px;
+    margin-left: 50px;
+}
+
+.tshirt4 {
+    margin-top: 600px;
+    margin-left: 350px;
+}
+
+.box {
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 1400px;
+    position: absolute;
+    top: 0;
+    margin-left: 678px;
+    margin-top: 300px;
+    border-radius: 15px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h5 {
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    margin-left: 810px;
+    margin-top: 330px;
+    text-align: center;
+}
+
+.blokje1, .blokje2, .blokje3, .blokje4 {
+    background-color: black;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    margin-left: 725px;
+    border-radius: 10px;
+}
+
+.blokje1 {
+    margin-top: 480px;
+}
+
+.blokje2 {
+    margin-top: 750px;
+}
+
+.blokje3 {
+    margin-top: 1020px;
+}
+
+.blokje4 {
+    margin-top: 1290px;
+}
+
+.knop {
+    background-color: #ee7870;
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 725px;
+    margin-top: 1570px;
+}
+
+h6 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    margin-left: 800px;
+    margin-top: 1595px;
+    color: white;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    position: absolute;
+    top: 0;
+    background-color: #ee7870;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    color: white;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon1 {
+    margin-left: 250px;
+    margin-top: 500px;
+}
+
+.icon2 {
+    margin-left: 550px;
+    margin-top: 500px;
+}
+
+.icon3 {
+    margin-left: 250px;
+    margin-top: 800px;
+}
+
+.icon4 {
+    margin-left: 550px;
+    margin-top: 800px;
+}
+
+/* Home Page */
+
+.koptekst {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+p {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 210px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.cato1, .cato2 {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+}
+
+.cato1 {
+    margin-left: 20px;
+    margin-top: 200px;
+}
+
+.cato2 {
+    margin-left: 20px;
+    margin-top: 950px;
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6, .o1, .o2, .o3, .o4, .o5 {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.s1 {
+    margin-left: 30px;
+    margin-top: 280px;
+}
+
+.s2 {
+    margin-left: 350px;
+    margin-top: 280px;
+}
+
+.s3 {
+    margin-left: 670px;
+    margin-top: 280px;
+}
+
+.s4 {
+    margin-left: 30px;
+    margin-top: 600px;
+}
+
+.s5 {
+    margin-left: 350px;
+    margin-top: 600px;
+}
+
+.s6 {
+    margin-left: 670px;
+    margin-top: 600px;
+}
+
+.o1 {
+    margin-left: 30px;
+    margin-top: 1030px;
+}
+
+.o2 {
+    margin-left: 350px;
+    margin-top: 1030px;
+}
+
+.o3 {
+    margin-left: 670px;
+    margin-top: 1030px;
+}
+
+.o4 {
+    margin-left: 30px;
+    margin-top: 1350px;
+}
+
+.o5 {
+    margin-left: 350px;
+    margin-top: 1350px;
+}
+
